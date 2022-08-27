@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const SERVER_URL = "https://technext-patents-app.herokuapp.com/patents";
+const SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 export const PatentsApi = axios.create({
   baseURL: SERVER_URL,
